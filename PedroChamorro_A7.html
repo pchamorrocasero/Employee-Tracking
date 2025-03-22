@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Tracking SFTE-120</h1>
+        <div class="clock-container">
+            <div id="clock">00:00:00</div>
+        </div>
+        <h2>Employee Time Tracking</h2>
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" placeholder="Enter name">
+        <div>
+            <button onclick="clockIn()">Clock In</button>
+            <button onclick="clockOut()">Clock Out</button>
+        </div>
+    </div>
+
+        <h3>Employee History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Clock In</th>
+                    <th>Clock Out</th>
+                </tr>
+            </thead>
+            <tbody id="history"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
